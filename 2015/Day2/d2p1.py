@@ -1,5 +1,3 @@
-import time
-
 def main():
     f = open("d2i1.txt", "r")
     total = 0
