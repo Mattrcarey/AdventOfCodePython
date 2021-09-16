@@ -1,5 +1,3 @@
-
-
 def main():
     f = open("d1i1.txt", "r")
     line = f.readline()
