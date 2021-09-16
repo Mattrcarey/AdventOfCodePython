@@ -1,5 +1,5 @@
 def main():
-    f = open("d1i1.txt", "r")
+    f = open("inputs.txt", "r")
     line = f.readline()
     f.close()
     count = 0

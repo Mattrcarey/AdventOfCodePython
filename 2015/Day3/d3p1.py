@@ -1,5 +1,5 @@
 def main() :
-    f = open("d3i1.txt", "r")
+    f = open("inputs.txt", "r")
     data = f.readline()
     x = 0
     y = 0

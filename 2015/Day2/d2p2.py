@@ -1,5 +1,5 @@
 def main():
-    f = open("d2i1.txt", "r")
+    f = open("inputs.txt", "r")
     total = 0
     for x in f:    
         data    = x.split("x") 
