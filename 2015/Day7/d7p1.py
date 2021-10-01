@@ -54,12 +54,6 @@ def calculate(key):
         return data[key]
     else:
         a  = data[key]
-        #print()
-        #print("step:")
-        #print("key="+key)
-        #print(a[1])
-        #print(a[0])
-        #print(a[2])
         data[key] = ops[a[0]](calculate(a[1]),calculate(a[2]))
         return data[key]
     
