@@ -20,7 +20,7 @@ def lookSay(n) :
 
 def main() :
     n = sys.argv[1]
-    for x in range(40) :
+    for x in range(50) :
         n = lookSay(n)
     print(len(n))
 
