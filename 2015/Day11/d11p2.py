@@ -23,7 +23,7 @@ def main():
                 break
         if (not increment):                         # doesn't have an increment
             continue
-        if ('i' in p or 'o' in p or 'l' in p):      # has an illegal char
+        if (re.search(r'[iol]', p)!=None):          # has an illegal char
             continue
         if len(set(re.findall(r'(.)\1', p))) < 2:   # doesn't have 2 doubles 
             continue
