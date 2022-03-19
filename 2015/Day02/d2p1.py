@@ -1,8 +1,12 @@
+import os
+import sys
+
+
 def main():
-    f = open("inputs.txt", "r")
+    f = open(os.path.join(sys.path[0], "inputs.txt"), "r")
     total = 0
     for x in f:
-        data = x.split('x')
+        data = x.split("x")
         side1 = int(data[0]) * int(data[1])
         side2 = int(data[1]) * int(data[2])
         side3 = int(data[2]) * int(data[0])
@@ -10,6 +14,7 @@ def main():
         total += min(min(side1, side2), side3)
     f.close()
     print(total)
- 
-if __name__ == "__main__":  
+
+
+if __name__ == "__main__":
     main()
